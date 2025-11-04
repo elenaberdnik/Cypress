@@ -1,0 +1,25 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Intro to Cypress",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx cypress test",
+    "test:cloud": "npx cypress run --record --key d2eb7ba5-f2d9-4976-b997-ae29528ad6b1",
+    "open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elenaberdnik/Cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elenaberdnik/Cypress/issues"
+  },
+  "homepage": "https://github.com/elenaberdnik/Cypress#readme",
+  "devDependencies": {
+    "cypress": "^15.5.0"
+  }
+}
