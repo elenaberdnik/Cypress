@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/elenaberdnik/Cypress#readme",
   "devDependencies": {
-    "cypress": "^15.5.0"
+    "cypress": "^15.6.0"
   }
 }
