@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  reporter: 'mochawesome',
+       reporter: 'mochawesome',
     reporterOptions: {
         reportDir: 'cypress/results',
         overwrite: false,
@@ -18,7 +18,7 @@ module.exports = defineConfig({
     },
     defaultCommandTimeout: 7000,
     e2e: {
-      baseUrl: "https://qauto.forstudy.space",
+      baseUrl: "https://qauto2.forstudy.space",
       watchForFileChanges: false,
       specPattern: "cypress/e2e/**/*.{spec,test}.{js,jsx,ts,tsx}",
       experimentalRunAllSpecs: true,

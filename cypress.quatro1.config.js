@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  reporter: 'mochawesome',
+       reporter: 'mochawesome',
     reporterOptions: {
         reportDir: 'cypress/results',
         overwrite: false,
@@ -26,4 +26,5 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     },
+
 });

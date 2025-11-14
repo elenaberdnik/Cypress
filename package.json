@@ -7,7 +7,15 @@
   "scripts": {
     "test": "npx cypress test",
     "test:cloud": "npx cypress run --record --key d2eb7ba5-f2d9-4976-b997-ae29528ad6b1",
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "cypress:quatro2": "npx cypress --config-file cypress.quatro2.config.js",
+    "cypress:quatro2:open": "npx cypress open --config-file cypress.quatro2.config.js",
+    "cypress:quatro2:cloud": "npx cypress run --config-file cypress.quatro2.config.js",
+    "cypress:quatro1:open": "npx cypress open --config-file cypress.quatro1.config.js",
+    "cypress:quatro1:cloud": "npx cypress run --config-file cypress.quatro1.config.js",
+    "merge-reports": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json",
+    "generate-report": "npx marge mochawesome.json",
+    "report": "npm run merge-reports && npm run generate-report"
   },
   "repository": {
     "type": "git",
@@ -20,6 +28,9 @@
   },
   "homepage": "https://github.com/elenaberdnik/Cypress#readme",
   "devDependencies": {
-    "cypress": "^15.6.0"
+    "cypress": "^15.6.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
