@@ -1,0 +1,32 @@
+[
+  {
+    "id": "empty",
+    "input": "",
+    "expect": { "error": "Name required" }
+  },
+  {
+    "id": "tooShort",
+    "input": "A",
+    "expect": { "error": "Name has to be from 2 to 20 characters long" }
+  },
+  {
+    "id": "tooLong",
+    "input": "Aaaaaaaaaaaaaaaaaaaaa",
+    "expect": { "error": "Name has to be from 2 to 20 characters long" }
+  },
+  {
+    "id": "invalidChars",
+    "input": "@@#",
+    "expect": { "error": "Name is invalid" }
+  },
+  {
+    "id": "trimSpaces",
+    "input": "  Elena  ",
+    "expect": { "error": "Name is invalid" }
+  },
+  {
+    "id": "validMin",
+    "input": "El",
+    "expect": { "valid": true }
+  }
+]

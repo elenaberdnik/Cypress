@@ -1,0 +1,37 @@
+[
+  {
+    "id": "empty",
+    "input": "",
+    "expect": { "error": "Last name required" }
+  },
+  {
+    "id": "tooShort",
+    "input": "A",
+    "expect": { "error": "Last name has to be from 2 to 20 characters long" }
+  },
+  {
+    "id": "tooLong",
+    "input": "AAAAAAAAAAAAAAAAAAAAA",
+    "expect": { "error": "Last name has to be from 2 to 20 characters long" }
+  },
+  {
+    "id": "invalidChars",
+    "input": "@@#",
+    "expect": { "error": "Last name is invalid" }
+  },
+  {
+    "id": "trimSpaces",
+    "input": "  Berdnik  ",
+    "expect": { "error": "Last name is invalid" }
+  },
+  {
+    "id": "validMin",
+    "input": "Ab",
+    "expect": { "valid": true }
+  },
+  {
+    "id": "validMax",
+    "input": "AAAAAAAAAAAAAAAAAAAA",
+    "expect": { "valid": true }
+  }
+]

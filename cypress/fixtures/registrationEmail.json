@@ -1,0 +1,47 @@
+[
+  {
+    "id": "empty",
+    "input": "",
+    "expect": { "error": "Email required" }
+  },
+  {
+    "id": "noAt",
+    "input": "plainaddress",
+    "expect": { "error": "Email is incorrect" }
+  },
+  {
+    "id": "noLocalPart",
+    "input": "@domain.com",
+    "expect": { "error": "Email is incorrect" }
+  },
+  {
+    "id": "noDomain",
+    "input": "user@",
+    "expect": { "error": "Email is incorrect" }
+  },
+  {
+    "id": "noTld",
+    "input": "user@domain",
+    "expect": { "error": "Email is incorrect" }
+  },
+  {
+    "id": "doubleDot",
+    "input": "user@domain..com",
+    "expect": { "error": "Email is incorrect" }
+  },
+  {
+    "id": "validSimple",
+    "input": "user@example.com",
+    "expect": { "valid": true }
+  },
+  {
+    "id": "validPlus",
+    "input": "user+tag@example.com",
+    "expect": { "valid": true }
+  },
+  {
+    "id": "validSubdomain",
+    "input": "first.last@sub.domain.co.uk",
+    "expect": { "valid": true }
+  }
+]
